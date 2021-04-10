@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { FaQuoteLeft, FaTumblrSquare } from 'react-icons/fa';
 import { FiTwitter } from 'react-icons/fi';
-function Quote(params) {
+import { colors } from '../utils/colors';
+function Quote() {
   const [quote, setQuote] = useState('');
   const [author, setAuthor] = useState('');
   useEffect(() => {
@@ -11,12 +12,18 @@ function Quote(params) {
     const data = await fetchQuote();
     setQuote(data.content);
     setAuthor(data.author);
+    changeTheme();
   };
   const fetchQuote = async () => {
     const response = await fetch('https://api.quotable.io/random');
     const data = await response.json();
     return data;
   };
+  const changeTheme=()=>{
+    const randomNumber=Math.floor(Math.random()*11+1)
+    const themeColor=colors[randomNumber]
+    document.querySelector('body').style.setProperty('--color',themeColor)
+  }
   return (
     <div id="quote-box">
       <div id="text">

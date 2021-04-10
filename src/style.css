@@ -1,6 +1,11 @@
+
+:root {
+  --color: #1e90ff;
+}
+
 body {
-  background-color: #16a085;
-  color: #16a085;
+  background-color: var(--color);
+  color: var(--color);
   height: 100vh;
   overflow-y: hidden;
 }
@@ -37,7 +42,7 @@ body {
 .button {
   margin-top: 1rem;
   padding: 0.8rem;
-  background-color: #16a085;
+  background-color: var(--color);
   color: #fff;
   font-weight: bold;
   border: none;
