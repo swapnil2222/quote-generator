@@ -1,0 +1,59 @@
+body {
+  background-color: #16a085;
+  color: #16a085;
+  height: 100vh;
+  overflow-y: hidden;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#quote-box {
+  display: flex;
+  flex-direction: column;
+  width: 35vw;
+  padding: 2.5rem 3rem;
+  background-color: #fff;
+  border-radius: 3px;
+}
+#text {
+  font-size: 1.75em;
+  font-family: serif;
+}
+#author {
+  padding-top: 20px;
+  font-size: 1rem;
+  text-align: right;
+}
+.flex {
+  display: flex;
+}
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.button {
+  margin-top: 1rem;
+  padding: 0.8rem;
+  background-color: #16a085;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.footer {
+  margin: 1rem 0;
+}
+.quote-icon {
+  margin: 0 0.5rem;
+  font-weight: bold;
+}
+.flex-3 {
+  flex: 3;
+}
+.mr-1 {
+  margin: 0 1rem;
+}
